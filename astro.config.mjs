@@ -6,7 +6,7 @@ import starlight from '@astrojs/starlight';
 export default defineConfig({
 	integrations: [
 		starlight({
-			title: 'My Docs',
+			title: 'Inspiration-Q Docs',
 			social: {
 				github: 'https://github.com/withastro/starlight',
 			},
@@ -21,6 +21,10 @@ export default defineConfig({
 				{
 					label: 'Reference',
 					autogenerate: { directory: 'reference' },
+				},
+				{
+					label: 'Api',
+					autogenerate: { directory: 'api' },
 				},
 			],
 		}),
